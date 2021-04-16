@@ -2,7 +2,7 @@
 
 A PID controller with output saturation is implemented in python for a DC motor control application.
 
-![Block Diagram](C:\Users\Sathira\PycharmProjects\motor-control-2\images\block_diagram.svg)
+![Block Diagram](/images/block_diagram.svg)
 
 The PID controller was implemented as a class named **SimplePIDController**.
 
