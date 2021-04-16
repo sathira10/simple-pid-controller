@@ -87,5 +87,5 @@ The following results were obtained for kp = 0.1, ki = 0.5 and kd = 0.004
 ### References
 
 1. [Implementing the PID Controller in Software - YouTube](https://www.youtube.com/watch?v=JVqJ7uRGwoA)
-2. [Lesson 14: Transfer Functions of Dc Motors (siu.edu)](https://www.engr.siu.edu/staff/spezia/Web438A/Lecture Notes/lesson14et438a.pdf)
+2. [Lesson 14: Transfer Functions of Dc Motors - siu.edu](https://www.engr.siu.edu/staff/spezia/Web438A/Lecture Notes/lesson14et438a.pdf)
 3. [Simulating Feedback Control Systems with Saturation using Python - YouTube](https://www.youtube.com/watch?v=6ivdfKfGp4k)
