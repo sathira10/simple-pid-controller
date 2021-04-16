@@ -42,8 +42,8 @@ To test the PID controller, an **armature controlled permanent magnet dc motor**
 * J (inertia) = 6.2e−4 Nm^2/rad
 * B (friction coefficient)= 0.0001 Nms/rad
 
-### Transfer function for motor 
-Transfer function between the armature voltage and the motor speed
+### Transfer function for motor* 
+*between the armature voltage and the motor speed
 
 
 
@@ -61,7 +61,7 @@ To implement this, we can use a microcontroller to generate a PWM which will in 
 
 <img src="images/plant.svg" />
 
-If we assume the motor drive   is linear, then we can consider the effect of both the PWM generator and motor drive as scaling the duty cycle by a constant. This implies a constant transfer function. Therefore, we can express the transfer function for the complete plant as follows. Here Ω is the angular speed and D is the duty ratio.
+If we assume the motor drive is linear, then we can consider the effect of both the PWM generator and motor drive as scaling the duty cycle by a constant. This implies a constant transfer function for the first two blocks. Therefore, we can express the transfer function for the complete plant as follows. Here Ω is the angular speed and D is the duty ratio.
 
 
 
