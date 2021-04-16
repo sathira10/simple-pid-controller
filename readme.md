@@ -16,7 +16,7 @@ The PID controller was implemented as a class named [**SimplePIDController**](co
 class PIDControler(kp, ki, kd, lim_min, lim_max, t):
 ```
 
-**Class attributes and methods:**
+#### Class attributes and methods:
 
 ```python
 kp: float  # proportional gain
@@ -48,7 +48,8 @@ To test the PID controller, an **armature controlled permanent magnet dc motor**
 
 
 
-***Transfer function for motor*** *(between the armature voltage and the motor speed)*
+#### Transfer function for motor 
+Transfer function between the armature voltage and the motor speed
 
 
 
@@ -60,7 +61,7 @@ To test the PID controller, an **armature controlled permanent magnet dc motor**
 
 
 
-**Transfer function for _plant_**
+#### Transfer function for _plant_
 
 To implement this, we can use a microcontroller to generate a PWM which will in turn control the input voltage to the motor (via a motor drive)
 
@@ -74,7 +75,7 @@ If we assume the motor drive   is linear, then we can consider the effect of bot
 
 
 
-**Control algorithm**
+#### Control algorithm
 
 <img src="images/system.svg" />
 
@@ -82,13 +83,13 @@ To implement the transfer function and obtain the response at a given point, the
 
 
 
-**Results**
+#### Results
 
 The following curves were obtained for kp=0.1, ki=0.5 and kd=0.004
 
 ![results](images/output_plant.png)![results](images/output_controller.png)
 
-**Code for simulation**
+#### Code for simulation
 
 * The code for simulating and plotting can be found [here](simulation.py) 
 
