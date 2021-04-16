@@ -13,7 +13,7 @@ A PID controller with output saturation is implemented in python for a DC motor 
 The PID controller was implemented as a class named [**SimplePIDController**](controller.py)
 
 ```python
-class PIDControler(kp, ki, kd, lim_min, lim_max, T):
+class PIDControler(kp, ki, kd, lim_min, lim_max, t):
 ```
 
 **Class attributes and methods:**
@@ -24,7 +24,7 @@ ki: float  # integral gain
 kd: float  # derivative gain
 lim_min: float  # min value for output saturation
 lim_max: float  # max value for output saturation    
-T: float  # sample time
+t: float  # sample time
     
 i: float = 0  # controller memory - integral term
 e_prev: float = 0  # controller memory - previous error

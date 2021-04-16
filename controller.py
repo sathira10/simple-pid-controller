@@ -13,7 +13,7 @@ class SimplePIDController:
     lim_max: float
 
     # cycle time
-    T: float
+    t: float
 
     # memory
     i: float = 0  # integrator
@@ -27,10 +27,10 @@ class SimplePIDController:
         p = self.kp * e
 
         # integral
-        self.i = self.i + self.ki * e * self.T
+        self.i = self.i + self.ki * e * self.t
 
         # derivative
-        d = self.kd * (e - self.e_prev) / self.T
+        d = self.kd * (e - self.e_prev) / self.t
 
         # update memory
         self.e_prev = e
