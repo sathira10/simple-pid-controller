@@ -52,11 +52,11 @@ To test the PID controller, an **armature controlled permanent magnet dc motor**
 
 
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5COmega%28s%29%7D%7BE%28s%29%7D%20%3D%5Cfrac%7BK_t%7D%7BRJs%5E2%2B%28RJ%2BBL%29s%2B%28K_tK_e%2BRB%29%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![equation](images/equations/Tex2Img_2.jpg)
 
 
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5COmega%28s%29%7D%7BE%28s%29%7D%20%3D%5Cfrac%7B0.06%7D%7B1.24%5Ctimes%2010%5E%7B-4%7D%20s%5E2%20%2B%200.000746%20s%2B0.00372%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![equation](images/equations/Tex2Img_1.jpg)
 
 
 
@@ -70,7 +70,7 @@ If we assume the motor drive   is linear, then we can consider the effect of bot
 
 
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5COmega%28s%29%7D%7BD%28s%29%7D%20%3D%5Cfrac%7B24%5Ctimes0.06%7D%7B1.24%5Ctimes%2010%5E%7B-4%7D%20s%5E2%20%2B%200.000746%20s%2B0.00372%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![equation](images/equations/Tex2Img_3.jpg)
 
 
 
