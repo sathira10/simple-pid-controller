@@ -6,7 +6,7 @@ A PID controller with output saturation is implemented in python for a DC motor 
 
 ![Block Diagram](/images/block_diagram.svg)
 
-### Implementation
+## Implementation
 
 The PID controller was implemented as a class named [**SimplePIDController**](controller.py)
 
@@ -14,7 +14,7 @@ The PID controller was implemented as a class named [**SimplePIDController**](co
 class PIDControler(kp, ki, kd, lim_min, lim_max, t):
 ```
 
-#### Class attributes and methods:
+### Class attributes and methods:
 
 ```python
 kp: float  # proportional gain
@@ -31,7 +31,7 @@ def update_pid(reference, measurement):
     return output # returns the PID controller output for a given pair of reference and measurement values
 ```
 
-### Testing and simulation
+## Testing and simulation
 
 To test the PID controller, an **armature controlled permanent magnet dc motor** was selected. with the following motor parameters
 
@@ -42,7 +42,7 @@ To test the PID controller, an **armature controlled permanent magnet dc motor**
 * J (inertia) = 6.2e−4 Nm^2/rad
 * B (friction coefficient)= 0.0001 Nms/rad
 
-#### Transfer function for motor 
+### Transfer function for motor 
 Transfer function between the armature voltage and the motor speed
 
 
@@ -55,7 +55,7 @@ Transfer function between the armature voltage and the motor speed
 
 
 
-#### Transfer function for _plant_
+### Transfer function for plant
 
 To implement this, we can use a microcontroller to generate a PWM which will in turn control the input voltage to the motor (via a motor drive)
 
@@ -67,24 +67,24 @@ If we assume the motor drive   is linear, then we can consider the effect of bot
 
 ![equation](images/equations/Tex2Img_3.jpg)
 
-#### Control algorithm
+### Control algorithm
 
 <img src="images/system.svg" />
 
 To implement the transfer function and obtain the response at a given point, the [Python Control Systems library](https://pypi.org/project/control) has been used . The [NumPy](https://numpy.org/) library was used for matrix manipulation.
 
-#### Results
+### Results
 
 The following results were obtained for kp = 0.1, ki = 0.5 and kd = 0.004
 
 ![results](images/output_plant.png)![results](images/output_controller.png)
 
-#### Code for simulation
+### Code for simulation
 
 * The code for simulating and plotting can be found [here](simulation.py) 
 * Example usage can be found [here](simulation.ipynb)
 
-### References
+## References
 
 1. [Implementing the PID Controller in Software - YouTube](https://www.youtube.com/watch?v=JVqJ7uRGwoA)
 2. [Lesson 14: Transfer Functions of Dc Motors (siu.edu)](https://www.engr.siu.edu/staff/spezia/Web438A/Lecture%20Notes/lesson14et438a.pdf)
