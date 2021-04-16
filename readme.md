@@ -49,13 +49,14 @@ To test the PID controller, an **armature controlled permanent magnet dc motor**
 
 
 ***Transfer function for motor*** *(between the armature voltage and the motor speed)*
-$$
-\frac{\Omega(s)}{E(s)} =\frac{K_t}{RJs^2+(RJ+BL)s+(K_tK_e+RB)}
-$$
 
-$$
-\frac{\Omega(s)}{E(s)} =\frac{0.06}{1.24\times 10^{-4} s^2 + 0.000746 s+0.00372}
-$$
+
+
+![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5COmega%28s%29%7D%7BE%28s%29%7D%20%3D%5Cfrac%7BK_t%7D%7BRJs%5E2%2B%28RJ%2BBL%29s%2B%28K_tK_e%2BRB%29%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+
+
+![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5COmega%28s%29%7D%7BE%28s%29%7D%20%3D%5Cfrac%7B0.06%7D%7B1.24%5Ctimes%2010%5E%7B-4%7D%20s%5E2%20%2B%200.000746%20s%2B0.00372%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
 
 
@@ -67,9 +68,9 @@ To implement this, we can use a microcontroller to generate a PWM which will in 
 
 If we assume the motor drive   is linear, then we can consider the effect of both the PWM generator and motor drive as scaling the duty cycle by a constant. This implies a constant transfer function. Therefore, we can express the transfer function for the complete plant as follows. Here Ω is the angular speed and D is the duty ratio.
 
-$$
-\frac{\Omega(s)}{D(s)} =\frac{24\times0.06}{1.24\times 10^{-4} s^2 + 0.000746 s+0.00372}
-$$
+
+
+![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5COmega%28s%29%7D%7BD%28s%29%7D%20%3D%5Cfrac%7B24%5Ctimes0.06%7D%7B1.24%5Ctimes%2010%5E%7B-4%7D%20s%5E2%20%2B%200.000746%20s%2B0.00372%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
 
 
