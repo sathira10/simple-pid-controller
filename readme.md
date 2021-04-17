@@ -1,7 +1,5 @@
 # Simple PID controller
 
-
-
 A PID controller with output saturation is implemented in python for a DC motor control application.
 
 ![Block Diagram](/images/block_diagram.svg)
@@ -42,7 +40,7 @@ To test the PID controller, an **armature controlled permanent magnet dc motor**
 * J (inertia) = 6.2e−4 Nm^2/rad
 * B (friction coefficient)= 0.0001 Nms/rad
 
-### Transfer function for motor* 
+### Transfer function for the motor* 
 *between the armature voltage and the motor speed
 
 
@@ -55,7 +53,7 @@ To test the PID controller, an **armature controlled permanent magnet dc motor**
 
 
 
-### Transfer function for plant
+### Transfer function for the plant
 
 To implement this, we can use a microcontroller to generate a PWM which will in turn control the input voltage to the motor (via a motor drive)
 
@@ -67,7 +65,7 @@ If we assume the motor drive is linear, then we can consider the effect of both 
 
 ![equation](images/equations/Tex2Img_3.jpg)
 
-### Control algorithm
+### Control implementation
 
 <img src="images/system.svg" />
 
@@ -79,9 +77,9 @@ The following results were obtained for kp = 0.1, ki = 0.5 and kd = 0.004
 
 ![results](images/output_plant.png)![results](images/output_controller.png)
 
-### Code for simulation
+### Code used for simulation
 
-* The code for simulating and plotting can be found [here](simulation.py) 
+* The code used for simulating and plotting can be found [here](simulation.py) 
 * Example usage can be found [here](simulation.ipynb)
 
 ## References
